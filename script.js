@@ -108,12 +108,12 @@ function handleKeyPress() { // opens handleKeyPress function
   if (key === 'a') { // opens if statement
     showMessage = false; // sets showMessage to false
     noStroke(); // no stroke
-    // grass brightens
-    fill(58, 168, 56); // sets fill color light green
-    rect(0, 259, 550, 200); // draws rectangle
     // sky brightens
     fill(80, 207, 230); // sets fill color light blue
-    rect(0, 0, 550, 260); // draws rectangle
+    rect(0, 0, 550, 280); // draws rectangle
+    // grass brightens
+    fill(58, 168, 56); // sets fill color light green
+    rect(0, 260, 550, 180); // draws rectangle
     // sun moves
     fill(255, 255, 0); // sets fill color yellow
     circle(361, 121, 70); // draws circle
@@ -124,6 +124,19 @@ function handleKeyPress() { // opens handleKeyPress function
     ellipse(150, 100, 50, 50); // draws circle
     ellipse(120, 90, 50, 50); // draws circle
     ellipse(130, 110, 50, 50); // draws circle
+    // flower
+    // draw stem
+    fill(34, 139, 34); // sets fill color green
+    rect(345, 320, 10, 60); // draws rectangle
+    // draw petals
+    fill(252, 186, 3); // sets fill color yellow
+    ellipse(335, 310, 30, 30); // draws circle
+    ellipse(350, 295, 30, 30); // draws circle
+    ellipse(365, 310, 30, 30); // draws circle
+    ellipse(350, 325, 30, 30); // draws circle
+    // draw flower center
+    fill(240, 151, 19); // sets fill color yellow-orange
+    ellipse(350, 310, 20, 20); // draws circle
     // bird moves
     drawBird(); // calls drawBird function
   } // closes if statement
@@ -160,7 +173,7 @@ function handleKeyPress() { // opens handleKeyPress function
     fill(34, 139, 34); // sets fill color green
     rect(345, 300, 10, 60); // draws rectangle
     // draw petals
-    fill(222, 122, 222); // sets fill color pink
+    fill(222, 122, 222); // sets fill color lavender
     ellipse(335, 285, 30, 30); // draws circle
     ellipse(350, 270, 30, 30); // draws circle
     ellipse(365, 286, 30, 30); // draws circle
@@ -210,6 +223,19 @@ function handleKeyPress() { // opens handleKeyPress function
     circle(350, 189, 5); // draws circle
     circle(336, 204, 5); // draws circle
     circle(376, 223, 5); // draws circle
+    // flower
+    // draw stem
+    fill(34, 139, 34); // sets fill color green
+    rect(345, 315, 10, 60); // draws rectangle
+    // draw petals
+    fill(144, 3, 252); // sets fill color purple
+    ellipse(335, 300, 30, 30); // draws circle
+    ellipse(350, 285, 30, 30); // draws circle
+    ellipse(365, 300, 30, 30); // draws circle
+    ellipse(350, 315, 30, 30); // draws circle
+    // draw flower center
+    fill(240, 151, 19); // sets fill color yellow-orange
+    ellipse(350, 300, 20, 20); // draws circle
     // bird
     drawBird(); // calls drawBird function
   } // closes if statement
@@ -247,7 +273,7 @@ function handleMousePress() { // opens handleMousePress function
     fill(34, 139, 34); // sets fill color green
     rect(91, 313, 10, 60); // draws rectangle
     // draw petals
-    fill(173, 127, 219); // sets fill color purple
+    fill(173, 127, 219); // sets fill color teal
     ellipse(80, 300, 30, 30); // draws circle
     ellipse(95, 284, 30, 30); // draws circle
     ellipse(112, 300, 30, 30); // draws circle
@@ -261,6 +287,19 @@ function handleMousePress() { // opens handleMousePress function
     noStroke(); // no stroke
     textAlign(LEFT, BOTTOM); // sets text alignment to bottom left
     text("Quick! The sun is going to set! Press 'b'!", 135, 289); // sets text and coordinates
+    // flower
+    // draw stem
+    fill(34, 139, 34); // sets fill color green
+    rect(345, 330, 10, 60); // draws rectangle
+    // draw petals
+    fill(3, 252, 157); // sets fill color teal
+    ellipse(335, 320, 30, 30); // draws circle
+    ellipse(350, 305, 30, 30); // draws circle
+    ellipse(365, 320, 30, 30); // draws circle
+    ellipse(350, 335, 30, 30); // draws circle
+    // draw flower center
+    fill(255, 255, 0); // sets fill color yellow-orange
+    ellipse(350, 320, 20, 20); // draws circle
     // bird
     drawBird(); // calls drawBird function
   } else { // closes if statement, opens else statement
